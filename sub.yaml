@@ -1,3 +1,4 @@
+---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
@@ -12,3 +13,22 @@ spec:
   source: redhat-operators
   sourceNamespace: openshift-marketplace
   startingCSV: amq-broker-operator.v7.10.2-opr-1
+---
+apiVersion: operators.coreos.com/v1alpha1
+kind: Subscription
+metadata:
+  creationTimestamp: "2022-12-15T13:03:51Z"
+  generation: 1
+  labels:
+    operators.coreos.com/web-terminal.openshift-operators: ""
+  name: web-terminal
+  namespace: openshift-operators
+  resourceVersion: "324857"
+  uid: b8761444-aa9f-4063-bf4e-deb462a9b3a1
+spec:
+  channel: fast
+  installPlanApproval: Automatic
+  name: web-terminal
+  source: redhat-operators
+  sourceNamespace: openshift-marketplace
+  startingCSV: web-terminal.v1.6.0
