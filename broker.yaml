@@ -11,8 +11,6 @@ spec:
     port: 1883
     protocols: mqtt
     sslEnabled: false
-    adminPassword: public
-    adminUser: admin
   adminPassword: public
   adminUser: admin
   console:
