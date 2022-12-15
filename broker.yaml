@@ -26,4 +26,3 @@ spec:
     persistenceEnabled: false
     requireLogin: true
     size: 1
-	
