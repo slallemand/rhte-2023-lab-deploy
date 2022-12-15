@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: warehouse
+  namespace: argocd
+spec:
+  project: warehouse
+  source:
+    repoURL: https://github.com/slallemand/rhte-2023-lab-deploy.git
+    targetRevision: HEAD
+    path: warehouse/base
+  destination:
+    server: https://api.cluster-452z2.452z2.sandbox969.opentlc.com:6443
+    namespace: warehouse-01
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
