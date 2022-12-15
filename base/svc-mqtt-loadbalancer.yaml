@@ -6,7 +6,6 @@ metadata:
 spec:
   ports:
   - name: mqtt-lb
-    nodePort: 32068
     port: 1883
     protocol: TCP
     targetPort: 1883
